@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paginação</title>
+    <style>
+        .pagination {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+            margin-top: 15rem;
+        }
+
+        .pagination a {
+            color: #333;
+            text-decoration: none;
+            padding: 8px 16px;
+            margin: 0 4px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            transition: background-color 0.3s, color 0.3s;
+            background-color: aquamarine;
+        }
+
+        .pagination a:hover {
+            background-color: #2bbd85;
+            color: white;
+            border-color: #1cb879;
+        }
+
+        .pagination .arrow {
+            font-size: 18px;
+            padding: 8px 12px;
+        }
+
+        .pagination .disabled {
+            color: #ccc;
+            pointer-events: none;
+            border-color: #eee;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="pagination">
+        <!-- Seta para a esquerda -->
+        <a href="#" class="arrow">&larr;</a>
+
+        <!-- Números da paginação -->
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+
+        <!-- Seta para a direita -->
+        <a href="#" class="arrow">&rarr;</a>
+    </div>
+
+</body>
+</html>
